@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>introduction of JQuery</title>
+  </head>
+  <body>
+    <h1>Introduction of JQuery</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, eligendi.
+    </p>
+    <span>njnjnaf</span>
+    <button class="Toggle">toggle</button>
+
+    <!-- JQuery src  here-->
+    <script src="../js library/jquery-3.7.1.min.js"></script>
+
+    <!-- jqueryh -->
+    <script>
+      $(document).ready(function () {
+        $("h1").click(function () {
+          console.log("gaurav jain");
+        });
+
+        $("p").click(function () {
+          $("h1").hide();
+        });
+
+        $("span").click(function () {
+          $("h1").show();
+        });
+
+        $(".Toggle").click(function () {
+          $("h1").toggle();
+        });
+
+        $("h1").click(function () {
+          $("p").toggle();
+        });
+      });
+    </script>
+  </body>
+</html>
