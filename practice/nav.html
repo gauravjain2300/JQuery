@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      div {
+        height: 100vh;
+        background-image: url(../images/th.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      ul {
+        display: flex;
+        gap: 50px;
+        list-style: none;
+        /* background-color: red; */
+        border: 1px solid white;
+        height: 40px;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        border-radius: 50px;
+        margin: 0 auto;
+        color: aliceblue;
+
+        font-size: 30px;
+      }
+      ol {
+        list-style: none;
+        /* color: aliceblue; */
+        position: absolute;
+        left: 50%;
+        /* background-color: aqua; */
+        color: black;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li>home</li>
+        <li>home</li>
+        <li class="HOME">HOME</li>
+        <li>home</li>
+        <li>home</li>
+      </ul>
+
+      <ol>
+        <li>about us</li>
+        <li>about us</li>
+        <li>about us</li>
+        <li>about us</li>
+      </ol>
+    </div>
+
+    <script src="../js library/jquery-3.7.1.min.js"></script>
+    <script>
+      // $(document).ready(function
+
+      $(".HOME").click(function () {
+        $("ol").css({ display: "block", backgroundColor: "white" });
+      });
+    </script>
+  </body>
+</html>

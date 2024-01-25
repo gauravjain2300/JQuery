@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        background-color: darkgoldenrod;
+        height: 50vh;
+      }
+
+      button {
+        height: 150px;
+        width: 150px;
+        background-color: burlywood;
+      }
+      img {
+        width: 100%;
+        height: 350px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button class="fadeIn">fadeIn</button>
+      <button class="fadeOut">fadeOut</button>
+      <button class="fadeToggle">fadeToggle</button>
+      <button class="fadeTo">fadeTo</button>
+    </div>
+    <img src="../images/th.jpg" alt="" />
+
+    <script src="../js library/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".fadeIn").click(function () {
+          $("img").fadeIn(3000);
+        });
+
+        $(".fadeOut").click(function () {
+          $("img").fadeOut(2000);
+        });
+
+        $(".fadeToggle").click(function () {
+          $("img").fadeToggle(1000);
+        });
+        $(".fadeTo").click(function () {
+          $("img").fadeTo(2000, 0.25);
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animat</title>
+
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Animate</h2>
+
+    <div class="box"></div>
+
+    <button class="button">Button</button>
+
+    <script src="../js library/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".button").click(function () {
+          $(".box").animate({
+            backgroundColor: "red",
+            border: "10px solid black",
+            width: "500px",
+            height: "400px",
+            paddingLeft: "100px",
+            marginLeft: "500px",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

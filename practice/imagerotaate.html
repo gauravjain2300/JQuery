@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #click {
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+      }
+    </style>
+  </head>
+  <body>
+    <img src="../images/th.jpg" alt="" id="image-1" />
+    <button id="click">click</button>
+
+    <script src="../js library/jquery-3.7.1.min.js"></script>
+    <script>
+      $("#click").click(function () {
+        $("#image-1").css({
+          transform: "rotate(1 fr)",
+        });
+      });
+    </script>
+  </body>
+</html>

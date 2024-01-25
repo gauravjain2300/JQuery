@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: aqua;
+        /* margin: 0 auto; */
+      }
+      .box {
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;
+        background-color: brown;
+      }
+
+      button {
+        margin-top: 20px;
+        width: 150px;
+        height: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hover</h1>
+    <div class="box"></div>
+    <button class="button">Hover</button>
+
+    <script src="../js library/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".button").hover(function () {
+          $(".box").css({
+            backgroundColor: "aliceblue",
+            border: "10px solid black",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
